@@ -267,121 +267,970 @@
 }
 
 
-.content1{
-	width: 1266px;
+.content{
+	width: 1226px;
+	height: 1187px;
+}
+.content .content1{
 	height: 460px;
-	margin: 0 auto;
 	position: relative;
-	top: 30px;
-	background-image: url(C:/Users/liyuphp/xiaomi/新建文件夹/04-project/mi/images/xmad_15421940322083_jTrLz.jpg);
-	background-size: 100% 100%;
-	box-sizing: border-box;
+	margin-bottom: 14px;
 }
 
-.content1 .content-left{
+.content .content1 .content1-left{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 234px;
-	height: 460px;
-	background: #64615b;
-	/*box-sizing: border-box;*/
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	padding: 20px 0;
+	z-index: 999;
 }
-.content-left li{
-	width: 200px;
-	height: 30px;
+
+.content1-left li{
+	height: 42px;
 	color: white;
-	line-height: 30px;
-	padding-left: 30px;
-	margin-top: 16px;
-	cursor: pointer;}
-.content-left li:hover{
-	background: red;
+	line-height: 42px;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 0px 20px 0px 30px;
 }
-.content-left i{
+.content1-left i{
 	float: right;
+}
+.content1-left li:hover{
+	background: #ff6700;
 }
 .content1 .content-right{
-	width: 1032px;
 	height: 460px;
-	float: right;
-	position: relative;
-	top: -460px;
+	background: red;
 }
-.content1 .content-right .bottom-left{
-	z-index: 999;
-	width: 40px;
-	height: 70px;
-	position: relative;
-	top: 195px;
+.content .content1 .content1-right img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-.content1 .content-right .bottom-left i{
-	font-size: 30px;
-	position: relative;
-	right: -8px;
-}
-.content1 .content-right .bottom-right{
-	z-index: 999;
-	width: 40px;
-	height: 70px;
-	position: relative;
-	top: 130px;
-	right: -992px;
-}
-.content1 .content-right .bottom-right i{
-	font-size: 30px;
-}
-.content-right a{
-	text-decoration: none;
-	color: #d5d4d1;
-}
-
 
 
 
 .content2{
-	width: 1268px;
+	width: 1228px;
 	height: 170px;
-	margin: 80px auto;
+	margin-bottom: 25px;
 }
-.content2-left1{
+.content2-box1{
 	width: 234px;
 	height: 170px;
-	background: black;
+	background: #5f5750;
+	float: left;
+	position: relative;
+	border-right: 1px #665e57;
+}
+.content2-box2{
+	width: 316px;
+	height: 170px;
+	float: right;
+	margin-left: 15px;
+}
+.content2-box3{
+	width: 316px;
+	height: 170px;
+	float: right;
+	margin-left: 15px;
+}
+.content2-box4{
+	width: 316px;
+	height: 170px;
+	float: right;
+}
+.content2 img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.content2-box1 .box1{
+	width:78px;
+	height: 85px;
 	float: left;
 }
-.content2-left2{
-	width: 316px;
-	height: 170px;
-	background:yellow;
-	float: right;
-	position: relative;
-	top: -380px;
+.content2-box1 .box1 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 30px;
+	color: #cfcdcb;
 }
-.content2-right1{
-	width: 316px;
-	height: 170px;
-	background:blue;
-	float: right;
-	position: relative;
-	top: -380px;
-	right: 29px;
+.content2-box1 .box1 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 50px;
+	left: 15px;
 }
-.content2-right2{
-	width: 316px;
-	height: 170px;
-	background:green;
+.content2-box1 .box2{
+	width:78px;
+	height: 85px;
+	color: #cfcdcb;
 	float: right;
-	position: relative;
-	top: -380px;
-	right: 59px;
 }
-.content2-right2 img{
+.content2-box1 .box2 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 25px;
+	color: #cfcdcb;
+}
+.content2-box1 .box2 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 50px;
+	left: 172px;
+}
+.content2-box1 .box3{
+	width:78px;
+	height: 85px;
+	color: #cfcdcb;
+	float: right;
+}
+.content2-box1 .box3 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 25px;
+	color: #cfcdcb;
+}
+.content2-box1 .box3 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 50px;
+	left: 92px;
+}
+.content2-box1 .box4{
+	width:78px;
+	height: 85px;
+	color: #cfcdcb;
+	float: right;
+}
+.content2-box1 .box4 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 23px;
+	color: #cfcdcb;
+}
+.content2-box1 .box4 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 136px;
+	left: 168px;
+}
+.content2-box1 .box5{
+	width:78px;
+	height: 85px;
+	color: #cfcdcb;
+	float: right;
+}
+.content2-box1 .box5 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 24px;
+	color: #cfcdcb;
+}
+.content2-box1 .box5 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 136px;
+	left: 90px;
+}
+.content2-box1 .box6{
+	width:78px;
+	height: 85px;
+	color: #cfcdcb;
+	float: left;
+}
+.content2-box1 .box6 i{
+	font-size: 26px;
+	line-height: 68px;
+	padding-left: 28px;
+	color: #cfcdcb;
+}
+.content2-box1 .box6 span{
+	font-size: 12px;
+	color: #cfcdcb;
+	position: absolute;
+	top: 136px;
+	left: 20px;
+}
+.content2-box1 i,span{
+	cursor: pointer;
+}
+.content2-box1 span:hover{
+	color: white;
+}
+.content2-box1 i:hover{
+	color: white;
+}
+
+
+
+
+.content3{
+	width: 1228px;
+	height: 400px;
+}
+.content3 h2{
+	height: 40px;
+	line-height: 63px;
+	font-size: 20px;
+}
+.content3 .biaoqian1{
+	width: 35px;
+	height: 22px;
+	float: right;
+	margin-top: -30px;
+	border:1px solid #e0e0e0;
+}
+.content3 .biaoqian2{
+	width: 35px;
+	height: 22px;
+	float: right;
+	margin-top: -30px;
+	margin-right: 36px;
+	border:1px solid #e0e0e0;
+}
+.content3 i{
+	margin-left: 11px;
+}
+.content3 i:hover{
+	color: red;
+}
+.content3 .box1{
+	width: 234px;
+	height: 340px;
+	background: #f4f1f1;
+	float: left;
+	box-sizing: border-box;
+	padding:60px 33px 49px 33px;
+	position: relative;
+	border-top: 1px solid red;
+}
+.content3 .box2{
+	width: 234px;
+	height: 340px;
+	background: white;
+	float: right;
+	margin-left: 15px;
+	border-top: 1px solid red;
+	position: relative;
+}
+.content3 .box3{
+	width: 234px;
+	height: 340px;
+	background: white;
+	float: right;
+	margin-left: 15px;
+	border-top: 1px solid blue;
+	position: relative;
+}
+.content3 .box4{
+	width: 234px;
+	height: 340px;
+	background: white;
+	float: right;
+	margin-left: 15px;
+	border-top: 1px solid #fde2af;
+	position: relative;
+}
+.content3 .box5{
+	width: 234px;
+	height: 340px;
+	background: white;
+	float: right;
+	border-top: 1px solid #fde2af;
+	position: relative;
+}
+.content3 .box1 .s1{
+	font-size: 20px;
+	margin-left: 45px;
+	color: red;
+}
+.content3 .box1 img{
+	width: 33px;
+	height: 54px;
+	position: absolute;
+	top: 110px;
+	left: 96px;
+}
+.content3 .box1 .s2{
+	font-size: 14px;
+	color: #706f6f;
+	position: absolute;
+	top: 200px;
+	left: 75px;
+}
+.content3 .box1 .s3{
+	font-size: 20px;
+	background: #605751;
+	padding: 14px 14px;
+	position: absolute;
+	top: 240px;
+	left: 26px;
+}
+.content3 .box1 .s4{
+	font-size: 20px;
+	background: #605751;
+	padding: 14px 14px;
+	position: absolute;
+	top: 240px;
+	left: 94px;
+}
+.content3 .box1 .s5{
+	font-size: 20px;
+	background: #605751;
+	padding: 14px 14px;
+	position: absolute;
+	top: 240px;
+	left: 163px;
+}
+.content3 .box1 .s6{
+	font-size: 34px;
+	position: absolute;
+	top: 242px;
+	left: 82px;
+}
+.content3 .box1 .s7{
+	font-size: 34px;
+	position: absolute;
+	top: 242px;
+	left: 150px;
+}
+
+.content3 .box2 img{
+	width: 233px;
+	height: 229px;
+	margin-top: 20px;
+}
+.content3 .box2 .s1{
+	font-size: 15px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+.content3 .box2 .s2{
+	font-size: 10px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 276px;
+	left: 88px;
+}
+.content3 .box2 .s3{
+	font-size: 12px;
+	color: #ff6700;
+	position: absolute;
+	top: 297px;
+	left: 97px;
+}
+.content3 .box2 .s4{
+	font-size: 12px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 297px;
+	left: 121px;
+	text-decoration: line-through;
+}
+.content3 .box3 img{
+	width: 233px;
+	height: 229px;
+	margin-top: 20px;
+}
+.content3 .box3 .s1{
+	font-size: 15px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+.content3 .box3 .s2{
+	font-size: 10px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 276px;
+	left: 88px;
+}
+.content3 .box3 .s3{
+	font-size: 12px;
+	color: #ff6700;
+	position: absolute;
+	top: 297px;
+	left: 97px;
+}
+.content3 .box3 .s4{
+	font-size: 12px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 297px;
+	left: 121px;
+	text-decoration: line-through;
+}
+.content3 .box4 img{
+	width: 233px;
+	height: 229px;
+	margin-top: 20px;
+}
+.content3 .box4 .s1{
+	font-size: 15px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+.content3 .box4 .s2{
+	font-size: 10px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 276px;
+	left: 88px;
+}
+.content3 .box4 .s3{
+	font-size: 12px;
+	color: #ff6700;
+	position: absolute;
+	top: 297px;
+	left: 97px;
+}
+.content3 .box4 .s4{
+	font-size: 12px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 297px;
+	left: 121px;
+	text-decoration: line-through;
+}
+.content3 .box5 img{
+	width: 233px;
+	height: 229px;
+	margin-top: 20px;
+}
+.content3 .box5 .s1{
+	font-size: 15px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+.content3 .box5 .s2{
+	font-size: 10px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 276px;
+	left: 88px;
+}
+.content3 .box5 .s3{
+	font-size: 12px;
+	color: #ff6700;
+	position: absolute;
+	top: 297px;
+	left: 97px;
+}
+.content3 .box5 .s4{
+	font-size: 12px;
+	color: #c1c0c3;
+	position: absolute;
+	top: 297px;
+	left: 121px;
+	text-decoration: line-through;
+}
+.flash{
+	width: 1226px;
+	height: 120px;
+}
+.flash img{
 	width: 100%;
 	height: 100%;
 }
-.content2-right1 img{
-	width: 100%;
-	height: 100%;
+
+
+
+
+.main{
+	width: 1226px;
+	height: 2117px;
+	background: #f5f5f5;
+	margin-top: 50px;
 }
-.content2-left2 img{
+.main .phone{
+	width: 1226px;
+	height: 673px;
+	position: relative;
+}
+.main .phone h2{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	float: left;
+}
+.main .phone a{
+	text-decoration: none;
+	float: right;
+	color: black;
+}
+.main .phone .all{
+	position: absolute;
+	top: 21px;
+	right: 30px;
+}
+.main .phone .yuan{
+	width: 20px;
+	height: 20px;
+	background: #b0b0b0;
+	border-radius: 50%;
+	padding-left: 2px;
+	position: absolute;
+	top: 21px;
+	right: 5px;
+}
+.main .phone a:hover .yuan{
+	color: red;
+	background: red;
+}
+.main .box1{
+	width: 234px;
+	height: 614px;
+	position: relative;
+	top: 60px;
+}
+.main .box1 img{
 	width: 100%;
 	height: 100%;
+	position: relative;
+	top: -40px;
+}
+.main .phone .box2{
+	width: 235px;
+	height: 300px;
+	float: right;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+}
+.main .phone .box3{
+	width: 235px;
+	height: 300px;
+	float: right;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.main .phone .box4{
+	width: 235px;
+	height: 300px;
+	float: right;
+	position: absolute;
+	top: 60px;
+	right: 250px;
+}
+.main .phone .box5{
+	width: 235px;
+	height: 300px;
+	float: right;
+	position: absolute;
+	bottom: 0px;
+	right: 250px;
+}
+.main .phone .box6{
+	width: 235px;
+	height: 300px;
+	position: absolute;
+	top:60px;
+	left: 250px;
+}
+.main .phone .box7{
+	width: 235px;
+	height: 300px;
+	position: absolute;
+	bottom:0px;
+	left: 250px;
+}
+.main .phone .box8{
+	width: 235px;
+	height: 300px;
+	position: absolute;
+	bottom:0px;
+	left: 496px;
+}
+.main .phone .box9{
+	width: 235px;
+	height: 300px;
+	position: absolute;
+	top:60px;
+	left: 496px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box2 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box3 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box4 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box5 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box6 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box7 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box8 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .b1{
+	width: 70px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	background: red;
+}
+.main .phone .s1{
+	font-size: 14px;
+	margin-left: 45px;
+	color: black;
+	position: relative;
+	top: 210px;
+	left: 50px;
+}
+.main .phone .s2{
+	font-size: 12px;
+	color: #bebebb;
+	position: relative;
+	top: 232px;
+	left: -8px;
+}
+.main .phone .box9 img{
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 42px;
+}
+.main .phone .s3{
+	font-size: 12px;
+	color: red;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.main .phone .s4{
+	font-size: 12px;
+	color: #bebebb;
+	text-decoration: line-through;
+	position: relative;
+	top: 250px;
+	left: -70px;
+}
+.phone div{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.phone div:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+
+
+.main .flash img{
+	height: 100%;
+	width: 100%;
+	margin-top: 42px;
 }
