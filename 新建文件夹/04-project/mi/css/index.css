@@ -795,13 +795,13 @@
 	color: red;
 	background: red;
 }
-.main .box1{
+.main .img{
 	width: 234px;
 	height: 614px;
 	position: relative;
 	top: 60px;
 }
-.main .box1 img{
+.main .img img{
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -1229,8 +1229,370 @@
 }
 
 
-.main .flash img{
-	height: 100%;
+.main .flash{
+	height: 120px;
 	width: 100%;
 	margin-top: 42px;
+}
+.main .flash img{
+	height: 100px;
+	width: 100%;
+}
+
+
+
+.jd{
+	width: 100%;
+	height: 673px;
+	margin-top: 20px;
+}
+.content-top{
+	width: 100%;
+	height: 58px;
+}
+.jd h2{
+	height: 52px;
+	font-size: 20px;
+	line-height: 52px;
+	float: left;
+}
+.jd .content-top a{
+	text-decoration: none;
+	color: black;
+}
+.jd .content-top ul{
+	height: 52px;
+	float: right;
+}
+.jd .content-top ul li{
+	float: right;
+	margin-left: 33px;
+	margin-top: 20px;
+}
+.jd .content-top a:hover{
+	color: red;
+}
+.jd .content-top ul li:hover{
+	border-bottom: 2px solid red;
+}
+.content-center{
+	width: 100%;
+	height: 300px;
+}
+.content-center li{
+	width: 233px;
+	height: 300px;
+	float: left;
+	margin:0px 15px 0px 0px;
+}
+.content-center .l5{
+	margin-right: 0px;
+}
+.content-center .l1 img{
+	width: 100%;
+	height: 100%;
+}
+.content-center .l2{
+	text-align: center;
+}
+.content-center .l2 img{
+	width: 100%;
+	height: 80%;
+}
+.content-center .l2 .s1{
+	font-size: 13px;
+}
+.content-center .l2 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-center .l3{
+	text-align: center;
+}
+.content-center .l3 img{
+	width: 100%;
+	height: 80%;
+}
+.content-center .l3 .s1{
+	font-size: 13px;
+}
+.content-center .l3 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-center .l4{
+	text-align: center;
+}
+.content-center .l4 img{
+	width: 100%;
+	height: 80%;
+}
+.content-center .l4 .s1{
+	font-size: 13px;
+}
+.content-center .l4 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-center .l5{
+	text-align: center;
+}
+.content-center .l5 img{
+	width: 100%;
+	height: 80%;
+}
+.content-center .l5 .s1{
+	font-size: 13px;
+}
+.content-center .l5 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-bottom{
+	width: 100%;
+	height: 300px;
+	margin-top: 15px;
+}
+.content-bottom li{
+	width: 233px;
+	height: 300px;
+	float: left;
+	margin:0px 15px 0px 0px;
+}
+.content-bottom .l5{
+	margin-right: 0px;
+}
+.content-bottom .l1 img{
+	width: 100%;
+	height: 100%;
+}
+.content-bottom .l2{
+	text-align: center;
+}
+.content-bottom .l2 img{
+	width: 100%;
+	height: 80%;
+}
+.content-bottom .l2 .s1{
+	font-size: 13px;
+}
+.content-bottom .l2 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-bottom .l3{
+	text-align: center;
+}
+.content-bottom .l3 img{
+	width: 100%;
+	height: 80%;
+}
+.content-bottom .l3 .s1{
+	font-size: 13px;
+}
+.content-bottom .l3 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-bottom .l4{
+	text-align: center;
+}
+.content-bottom .l4 img{
+	width: 100%;
+	height: 80%;
+}
+.content-bottom .l4 .s1{
+	font-size: 13px;
+}
+.content-bottom .l4 .s2{
+	font-size: 12px;
+	color: red;
+}
+.content-bottom li .box1{
+	width: 100%;
+	height: 142px;
+}
+.content-bottom li .box1 .s1{
+	font-size: 13px;
+	position: relative;
+	top: 50px;
+	left: 30px;
+}
+.content-bottom li .box1 .s2{
+	font-size: 10px;
+	color: red;
+	position: relative;
+	top: 53px;
+	left: 46px;
+}
+.content-bottom li .box1 img{
+	width: 50%;
+	height: 100px;
+	float: right;
+	margin-top: 10px;
+}
+.content-bottom li .box2{
+	width: 100%;
+	height: 142px;
+	margin-top: 14px;
+}
+.content-bottom li .box2 .s1{
+	font-size: 17px;
+	position: relative;
+	top: 25px;
+	left: 38px;
+}
+.content-bottom li .box2 .s2{
+	font-size: 12px;
+	position: relative;
+	top: -8px;
+	left: 37px;
+	color: gray;
+}
+.content-bottom li .box2 i{
+	position: relative;
+	top: -9px;
+	right: -117px;
+	color: red;
+	font-size: 52px;
+}
+.jd li{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.jd .content-center li:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li:nth-child(1):hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li:nth-child(2):hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li:nth-child(3):hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li:nth-child(4):hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li .box1{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.jd .content-bottom li .box2{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.jd .content-bottom li .box1:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+.jd .content-bottom li .box2:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+
+
+
+.video{
+	width: 100%;
+	height: 365px;
+}
+.video a{
+	color: black;
+	text-decoration: none;
+}
+.video h2{
+	height: 80px;
+	font-size: 20px;
+	line-height: 80px;
+	float: left;
+}
+.video .s1{
+	font-size: 16px;
+	float: right;
+	margin-top: 30px;
+}
+.video .i i{
+	width: 20px;
+	height: 23px;
+	background: gray;
+	float: right;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 2px;
+	margin-top: 30px;
+}
+.video i{
+	font-size: 21px;
+}
+.video a:hover{
+	color: red;
+}
+.video ul{
+	width: 100%;
+	height: 285px;
+	float: left;
+}
+.video ul li{
+	width: 298px;
+	height: 285px;
+	float: right;
+	margin-left: 8px;
+}
+.video ul li .p{
+	width: 298px;
+	height: 180px;
+	background: blue;
+}
+.video ul li .p img{
+	width: 100%;
+	height: 100%;
+}
+.video ul li .s2{
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+	top: 25px;
+	left: 0px;
+}
+.video ul li {
+	text-align: center;
+}
+.video ul li .s3{
+	font-size: 13px;
+	color: gray;
+	position: relative;
+	top: 30px;
+	left: 0px;
+}
+.video ul li .play{
+	width: 37px;
+	height: 24px;
+	position: relative;
+	background: rgba(0,0,0,0.5);
+	border:2px solid white;
+	border-radius: 12px;
+	top: -80px;
+	left: 10px;
+}
+.video ul li .play i{
+	color: white;
+	font-size: 32px;
+	position: relative;
+	top: -4px;
+	left: 0px;
+}
+.video li{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.video .head ul li:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
 }
