@@ -250,7 +250,7 @@
 .content1-left li:hover{
 	background: #ff6700;
 }
-.content1-right{
+.content1 .content-right{
 	height: 460px;
 	background: #ff6700;
 }
@@ -1638,7 +1638,6 @@
 	float: right;
 	padding-top: 50px;
 	text-align: center;
-	box-sizing: border-box;
 }
 .foot-content-right .s1{
 	font-size: 20px;
@@ -1682,7 +1681,6 @@
 .foot-foot-left{
 	width: 810px;
 	height: 148px;
-	float: left;
 }
 .foot-foot-left img{
 	width:57px;
@@ -1728,7 +1726,7 @@
 	color: #ff6700;
 }
 .foot-foot-right{
-	width: 442px;
+	width: 546px;
 	height: 148px;
 	float: right;
 }
