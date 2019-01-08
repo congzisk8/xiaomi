@@ -7,6 +7,9 @@
 *{
 	margin: 0px;
 	padding: 0px;
+} 
+a{
+	text-decoration: none;
 }
 .clearfix:after{
 	content: "";
@@ -105,33 +108,25 @@
 .head2{
 	width: 1226px;
 	height: 50px;
-	margin: 0 auto;
-	position: relative;
-	top: 25px;
+	margin: 20px auto;
 	box-sizing: border-box;
+	position: relative;
 }
 .head2-left-box{
 	width: 50px;
 	height: 50px;
-	margin-left: 70px;
 	background:#ff6700;
 	font-size: 20px;
-	position: relative;
-	left: -70px;
+	float: left;
 }
 .head2-left-box img{
-	position: relative;
-	top: 0px;
-	left: 3px;
 	z-index: 999;
 }
 .head2-center{
-	width: 696px;
+	width: 745px;
 	height: 50px;
-	position: relative;
-	left: 207px;
-	top: -50px;
-	right: 91px;
+	float: right;
+	margin-right: 73px;
 }
 .head2-center a{
 	text-decoration: none;
@@ -147,9 +142,6 @@
 	width: 296px;
 	height: 50px;
 	float: right;
-	position: relative;
-	top: -100px;
-	right: 0px;
 }
 .head2-right input{
 	border: 1px solid #7f7f7f;
@@ -166,6 +158,7 @@
 	position: relative;
 	top: 0;
 	right: 125px;
+	cursor: pointer;
 }
 .head2-right .s2{
 	font-size: 5px;
@@ -174,6 +167,7 @@
 	position: relative;
 	top: -35px;
 	right: -171px;
+	cursor: pointer;
 }
 .head2-right div{
 	width: 48px;
@@ -202,11 +196,33 @@
 .head2-right input:hover{
 	border: 1px solid #ff6700;
 }
+.head2-right input:hover + .head2-right div{
+	border: 1px solid #ff6700;
+}
 .head2-right span:hover{
 	background: #ff6700;
 }
-.head2-right-bottom{
+.head2-bottom{
+	width: 243px;
+	position: absolute;
+	right: 51px;
+	top: 44px;
+	/*display: none;*/
+	border: 1px solid #ff6700;
+}
+.head2-bottom ul li{
+	height: 30px;
+	line-height: 30px;
+}
+.head2-bottom ul li .s1{
+	float: left;
+	color: black;
+	margin-left: 14px;
+}
+.head2-bottom ul li .s2{
 	float: right;
+	color: #b0b0b0;
+	margin-right: 14px;
 }
 
 
@@ -223,17 +239,20 @@
 	position: relative;
 	margin-bottom: 14px;
 }
+.content1 img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;	
+}
 
 .content .content1 .content1-left{
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 234px;
 	height: 100%;
 	background: rgba(0,0,0,0.5);
 	box-sizing: border-box;
 	padding: 20px 0;
 	z-index: 999;
+	float: left;
 }
 
 .content1-left li{
@@ -251,16 +270,11 @@
 	background: #ff6700;
 }
 .content1-right{
+	width: 992px;
 	height: 460px;
-	background: #ff6700;
+	float: right;
 }
-.content .content1 .content1-right img{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+
 .content-right{
 	width: 992px;
 	height: 460px;
