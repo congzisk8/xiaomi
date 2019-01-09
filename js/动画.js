@@ -12,6 +12,7 @@
  * @param  {boolean} isLinear [是否是匀速动画]
  * @param  {function} fnEnd [动画结束时执行的函数]
  */
+ //动画
 function animate(obj,options,isLinear,fnEnd){
 	//设置默认是匀速动画
 	if(isLinear == undefined){
@@ -96,3 +97,147 @@ function getScrollTop(){
 function getScrollLeft(){
 	return  window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft;	
 }
+
+//轮播图
+function Carousel(options){
+		//1.罗列属性
+		this.oBox = document.getElementById(options.id);
+		this.aImg = options.aImg;
+		this.width = options.width;
+		this.height = options.height;
+		this.oUlImg = null;
+		this.oUlBtn = null;
+		this.oLeftArrow = null;
+		this.oRightArrow = null;
+		this.playDuration = options.playDuration;
+		this.now = 0;//当前显示的图片下标
+		//2.初始化DOM节点
+		this.init();
+		//3.绑定事件
+		this.bindEvent();
+		//自动播放
+		if(this.playDuration){
+			this.auto();
+		}
+}
+Carousel.prototype.init = function(){
+		//处理外层父容器
+		this.oBox.style.position = 'relative';
+		this.oBox.style.width = this.width + 'px';
+		this.oBox.style.height = this.height + 'px';
+		//1.生成图片的容器
+		this.oUlImg = document.createElement('ul');
+		//2.底部指示按钮
+		this.oUlBtn = document.createElement('ul');
+		this.oUlBtn.className = 'bottomBtn';
+		this.oUlBtn.style.zIndex = 99;
+		for(var i = 0;i<this.aImg.length;i++){
+			//图片容器
+			var oLi = document.createElement('li');
+			oLi.style.position = 'absolute';
+			oLi.style.left = 0;
+			oLi.style.top = 0;
+			//底部指示按钮
+			var oBtn = document.createElement('li');
+			if(i == 0){
+				oLi.style.zIndex = 50;
+				oLi.style.opacity = 1;
+				oBtn.className = 'active';
+			}else{
+				oLi.style.zIndex = 0;
+				oLi.style.opacity = 0.5;
+			}
+			var oImg = document.createElement('img');
+			oImg.style.width = this.width + 'px';
+			oImg.style.height = this.height + 'px';
+			oImg.src = this.aImg[i];
+			oLi.appendChild(oImg);
+			this.oUlImg.appendChild(oLi);
+			this.oUlBtn.appendChild(oBtn);
+		}
+		//2.生成左右箭头
+		this.oLeftArrow = document.createElement('span');
+		this.oRightArrow = document.createElement('span');
+		this.oLeftArrow.className = 'leftArrow';
+		this.oRightArrow.className = 'rightArrow';
+		this.oLeftArrow.style.zIndex = 99;
+		this.oRightArrow.style.zIndex = 99;
+		this.oLeftArrow.innerHTML = '&lt;';
+		this.oRightArrow.innerHTML = '&gt;';
+		//添加图片的容器到外层父容器中
+		this.oBox.appendChild(this.oUlImg);
+		//添加左右箭头到外层父容器中
+		this.oBox.appendChild(this.oLeftArrow);
+		this.oBox.appendChild(this.oRightArrow);
+		//添加底部指示按钮到外层父容器中
+		this.oBox.appendChild(this.oUlBtn);
+		this.oUlBtn.style.marginLeft = - this.oUlBtn.offsetWidth * 0.5 + 'px';
+}
+	
+Carousel.prototype.bindEvent = function(){
+		var _this = this;
+		//绑定右按钮
+		this.oRightArrow.onclick = function(){
+			//显示下一张
+			_this.now++;
+			if(_this.now >= _this.aImg.length){
+				_this.now = 0;
+			}
+			_this.tab();
+			
+		}
+		//绑定左按钮
+		this.oLeftArrow.onclick = function(){
+			_this.now--;
+			if(_this.now < 0){
+				_this.now = _this.aImg.length - 1;
+			}
+			_this.tab();
+		}
+		//绑定底部指示按钮
+		for(var i = 0 ;i<this.oUlBtn.children.length;i++){
+			this.oUlBtn.children[i].index = i;
+			this.oUlBtn.children[i].onclick = function(){
+				_this.now = this.index;
+				_this.tab();
+			}
+		}
+}
+Carousel.prototype.tab = function(){
+		//1.清除所有
+		for(var i = 0;i<this.aImg.length;i++){
+			this.oUlImg.children[i].style.zIndex = 0;
+			this.oUlImg.children[i].style.opacity = 0.5;
+			this.oUlBtn.children[i].className = '';
+		}
+		//显示新的	
+		this.oUlImg.children[this.now].style.zIndex = 50;
+		// this.oUlImg.children[this.now].style.opacity = 1;
+		animate(this.oUlImg.children[this.now],{opacity:100});
+		this.oUlBtn.children[this.now].className = 'active';				
+}
+Carousel.prototype.auto = function(){
+		var timer = 0;
+		var _this = this;
+		timer = setInterval(this.oRightArrow.onclick,this.playDuration);
+		this.oBox.onmouseover = function(){
+			clearInterval(timer);
+		}
+		this.oBox.onmouseout = function(){
+			timer = setInterval(_this.oRightArrow.onclick,_this.playDuration);
+		}
+}
+new Carousel({
+		id:'carousel',
+		aImg:['新建文件夹/04-project/mi/images/b1.jpg','新建文件夹/04-project/mi/images/b2.jpg','新建文件夹/04-project/mi/images/b3.jpg'],
+		width:1226,
+		height:460,
+		playDuration:1000
+});
+new Carousel({
+		id:'box2',
+		aImg:['images/ad1.jpg','images/ad2.jpg','images/ad3.jpg'],
+		width:830,
+		height:440,
+		playDuration:1000
+});	

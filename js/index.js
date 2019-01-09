@@ -1,13 +1,14 @@
 
 handleCart();
 handleNav();
+handleCarousel();
 
 //处理购物车
 function handleCart(){
 	//1.获取元素
 	var oCart = document.querySelector('.head1-right');
 	var oCartLink = document.querySelector('.head1-right-box a');
-	var oCartContent = document.getElementById('box1');
+	var oCartContent = document.getElementById('box11');
 	var oLoder = document.querySelector('.loader');
 	var oEmptyCart = document.getElementById('s1');
 
@@ -103,4 +104,14 @@ function handleNav(){
 		oNavContentContainer.innerHTML = html;
 
 	}
+}
+//处理首页轮播图
+function handleCarousel(){
+	new Carousel({
+		id:'',
+		aImg:['images/ad1.jpg','images/ad2.jpg','images/ad3.jpg'],
+		width:830,
+		height:440,
+		playDuration:1000
+	});	
 }
