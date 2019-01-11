@@ -227,17 +227,3 @@ Carousel.prototype.auto = function(){
 			timer = setInterval(_this.oRightArrow.onclick,_this.playDuration);
 		}
 }
-new Carousel({
-		id:'carousel',
-		aImg:['新建文件夹/04-project/mi/images/b1.jpg','新建文件夹/04-project/mi/images/b2.jpg','新建文件夹/04-project/mi/images/b3.jpg'],
-		width:1226,
-		height:460,
-		playDuration:1000
-});
-new Carousel({
-		id:'box2',
-		aImg:['images/ad1.jpg','images/ad2.jpg','images/ad3.jpg'],
-		width:830,
-		height:440,
-		playDuration:1000
-});	

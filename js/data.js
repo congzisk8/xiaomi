@@ -300,4 +300,26 @@ var aNavItemData = [
 			price:'智能硬件',
 		},	
 	],//智能硬件
+];
+
+var aCateItemDate = [
+
+	[
+		{
+			url:'http://www.kuazhu.com',
+			img:'新建文件夹/04-project/mi/images/p1.jpg',
+			name:'小米MIX3'
+		},
+		{
+			url:'http://www.kuazhu.com',
+			img:'新建文件夹/04-project/mi/images/p2.jpg',
+			name:'小米MIX2'
+		},
+		{
+			url:'http://www.kuazhu.com',
+			img:'新建文件夹/04-project/mi/images/p3.jpg',
+			name:'小米MIX1'
+		},		
+	],
+	[],
 ]

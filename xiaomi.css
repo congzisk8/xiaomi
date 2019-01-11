@@ -354,6 +354,8 @@
 	margin-top: 50px;
 }
 
+
+
 .leftArrow,.rightArrow{
 	position: absolute;
 	top:50%;
@@ -433,7 +435,8 @@
 .content1-left i{
 	float: right;
 }
-.content1-left li:hover{
+
+.cate-item.active{
 	background: #ff6700;
 }
 /*

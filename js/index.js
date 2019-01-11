@@ -2,6 +2,7 @@
 handleCart();
 handleNav();
 handleCarousel();
+handleCate();
 
 //处理购物车
 function handleCart(){
@@ -108,10 +109,51 @@ function handleNav(){
 //处理首页轮播图
 function handleCarousel(){
 	new Carousel({
-		id:'',
-		aImg:['images/ad1.jpg','images/ad2.jpg','images/ad3.jpg'],
-		width:830,
-		height:440,
+		id:'carousel',
+		aImg:['新建文件夹/04-project/mi/images/b1.jpg','新建文件夹/04-project/mi/images/b2.jpg','新建文件夹/04-project/mi/images/b3.jpg'],
+		width:1226,
+		height:460,
 		playDuration:1000
 	});	
+}
+//处理分类
+
+function handleCate(){
+	var aCateItem = document.querySelectorAll('.cate-item');
+	var oCateContent = document.querySelector('.cate-content');
+	var oCateBox = document.querySelector('.cat-box');
+	for(var i = 0;i<aCateItem.length;i++){
+		aCateItem[i].index = i;
+		aCateItem[i].onmouseenter = function(){
+		for(var j = 0;j<aCateItem.length;j++){
+			aCateItem[j].className = 'cate-item'
+		}			
+			oCateContent.style.display = 'block';
+			this.className = 'cate-item active';
+			//加载数据
+			loadData(this.index);
+		}
+	}
+	oCateBox.onmouseleave = function(){
+		oCateContent.style.display = 'none';
+		for(var j = 0;j<aCateItem.length;j++){
+			aCateItem[j].className = 'cate-item'
+		}		
+	}
+
+	function loadData(index){
+		console.log(aCateItemDate);
+		var data = aCateItemDate[index];
+		var html = '<ul>';
+		for(var i=0;i<data.length;i++){
+			html +=	'<li>';
+			html +=		'<a href="'+data[i].url+'">';
+			html +=			'<img src="'+data[i].img+'">';
+			html +=			'<span>'+data[i].name+'</span>';
+			html +=		'</a>';
+			html +=	'</li>';		
+		}
+		html += '</ul>';
+		oCateContent.innerHTML = html;
+	}
 }
