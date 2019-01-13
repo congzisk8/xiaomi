@@ -473,12 +473,12 @@
 }
 .cate-content li{
 	float: left;
-	width: 120px;
-	height: 80px;
+	width: 220px;
+	height: 70px;
 }
 .cate-content li img{
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	vertical-align: middle;
 }
 .cate-content li span{
@@ -696,6 +696,16 @@
 .content3 i:hover{
 	color: #ff6700;
 }
+.content3 .col2{
+	overflow: hidden;
+}
+.content3 .prodoct-list{
+	overflow: hidden;
+	width: 2500px;
+	float: left;
+	margin-left: 14px;
+	transition: all 0.3s;
+}
 .content3 .box1{
 	width: 234px;
 	height: 340px;
@@ -706,42 +716,28 @@
 	position: relative;
 	border-top: 1px solid #ff6700;
 }
-.content3 .box2{
+.content3 .prodoct-list li{
 	width: 234px;
 	height: 340px;
 	background: white;
-	float: right;
-	margin-left: 15px;
-	border-top: 1px solid #ff6700;
+	float: left;
 	position: relative;
+	margin-right: 14px;
+	position: relative;
+}
+.content3 .box2{
+	border-top: 1px solid #ff6700;
 }
 .content3 .box3{
-	width: 234px;
-	height: 340px;
-	background: white;
-	float: right;
-	margin-left: 15px;
 	border-top: 1px solid blue;
-	position: relative;
 }
 .content3 .box4{
-	width: 234px;
-	height: 340px;
-	background: white;
-	float: right;
-	margin-left: 15px;
 	border-top: 1px solid #fde2af;
-	position: relative;
 }
 .content3 .box5{
-	width: 234px;
-	height: 340px;
-	background: white;
-	float: right;
 	border-top: 1px solid #fde2af;
-	position: relative;
 }
-.content3 .box1 .s1{
+.content3 .box1 .time{
 	font-size: 20px;
 	margin-left: 45px;
 	color: #ff6700;
@@ -763,14 +759,16 @@
 .content3 .box1 .s3{
 	font-size: 20px;
 	background: #605751;
+	color: white;
 	padding: 14px 14px;
 	position: absolute;
 	top: 240px;
 	left: 26px;
 }
-.content3 .box1 .s4{
+.content3 .box1 .s10{
 	font-size: 20px;
 	background: #605751;
+	color: white;
 	padding: 14px 14px;
 	position: absolute;
 	top: 240px;
@@ -779,6 +777,7 @@
 .content3 .box1 .s5{
 	font-size: 20px;
 	background: #605751;
+	color: white;
 	padding: 14px 14px;
 	position: absolute;
 	top: 240px;
@@ -802,27 +801,28 @@
 	height: 229px;
 	margin-top: 20px;
 }
-.content3 .box2 .s1{
+.content3 .s1{
 	font-size: 15px;
 	position: absolute;
 	top: 250px;
 	left: 100px;
+	color: black;
 }
-.content3 .box2 .s2{
+.content3 .s2{
 	font-size: 10px;
 	color: #c1c0c3;
 	position: absolute;
 	top: 276px;
 	left: 88px;
 }
-.content3 .box2 .s3{
+.content3 .s3{
 	font-size: 12px;
 	color: #ff6700;
 	position: absolute;
 	top: 297px;
 	left: 97px;
 }
-.content3 .box2 .s4{
+.content3 .s4{
 	font-size: 12px;
 	color: #c1c0c3;
 	position: absolute;
@@ -830,104 +830,10 @@
 	left: 121px;
 	text-decoration: line-through;
 }
-.content3 .box3 img{
+.content3 img{
 	width: 233px;
 	height: 229px;
 	margin-top: 20px;
-}
-.content3 .box3 .s1{
-	font-size: 15px;
-	position: absolute;
-	top: 250px;
-	left: 100px;
-}
-.content3 .box3 .s2{
-	font-size: 10px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 276px;
-	left: 88px;
-}
-.content3 .box3 .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: absolute;
-	top: 297px;
-	left: 97px;
-}
-.content3 .box3 .s4{
-	font-size: 12px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 297px;
-	left: 121px;
-	text-decoration: line-through;
-}
-.content3 .box4 img{
-	width: 233px;
-	height: 229px;
-	margin-top: 20px;
-}
-.content3 .box4 .s1{
-	font-size: 15px;
-	position: absolute;
-	top: 250px;
-	left: 100px;
-}
-.content3 .box4 .s2{
-	font-size: 10px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 276px;
-	left: 88px;
-}
-.content3 .box4 .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: absolute;
-	top: 297px;
-	left: 97px;
-}
-.content3 .box4 .s4{
-	font-size: 12px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 297px;
-	left: 121px;
-	text-decoration: line-through;
-}
-.content3 .box5 img{
-	width: 233px;
-	height: 229px;
-	margin-top: 20px;
-}
-.content3 .box5 .s1{
-	font-size: 15px;
-	position: absolute;
-	top: 250px;
-	left: 100px;
-}
-.content3 .box5 .s2{
-	font-size: 10px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 276px;
-	left: 88px;
-}
-.content3 .box5 .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: absolute;
-	top: 297px;
-	left: 97px;
-}
-.content3 .box5 .s4{
-	font-size: 12px;
-	color: #c1c0c3;
-	position: absolute;
-	top: 297px;
-	left: 121px;
-	text-decoration: line-through;
 }
 .flash{
 	width: 1226px;
@@ -1465,9 +1371,11 @@
 .jd .content-top a:hover{
 	color: #ff6700;
 }
+/*
 .jd .content-top ul li:hover{
 	border-bottom: 2px solid #ff6700;
 }
+*/
 
 
 .content-center{

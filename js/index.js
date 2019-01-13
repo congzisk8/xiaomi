@@ -3,6 +3,9 @@ handleCart();
 handleNav();
 handleCarousel();
 handleCate();
+handleCountdown();
+handleFlashProudct();
+handleElecOriduct();
 
 //处理购物车
 function handleCart(){
@@ -117,7 +120,6 @@ function handleCarousel(){
 	});	
 }
 //处理分类
-
 function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate-item');
 	var oCateContent = document.querySelector('.cate-content');
@@ -142,7 +144,6 @@ function handleCate(){
 	}
 
 	function loadData(index){
-		console.log(aCateItemDate);
 		var data = aCateItemDate[index];
 		var html = '<ul>';
 		for(var i=0;i<data.length;i++){
@@ -156,4 +157,46 @@ function handleCate(){
 		html += '</ul>';
 		oCateContent.innerHTML = html;
 	}
+}
+//处理倒计时
+function handleCountdown(){
+	var oTimenubm = document.querySelectorAll('.content3 .box1 .s3,.content3 .box1 .s10,.content3 .box1 .s5');
+	var endDate = new Date('2019-1-15 15:06:59');
+	var timer = 0
+	function to2Str(num){
+		return num > 9 ? '' +num : '0'+num;
+	}
+	function handleTimer(){
+		var endTime = endDate.getTime();
+		var allMinsecinds = endTime - Date.now();
+		if(allMinsecinds < 0){
+			allMinsecinds = 0;
+			clearInterval(timer);
+		}
+		var allSeconds = parseInt(allMinsecinds/1000);
+		var iHour = parseInt(allSeconds/3600);
+		var iMinute = parseInt((allSeconds % 3600) /60);
+		var iSeconds = (allSeconds % 3600)%60;
+		oTimenubm[0].innerHTML = to2Str(iHour);
+		oTimenubm[1].innerHTML = to2Str(iMinute);
+		oTimenubm[2].innerHTML = to2Str(iSeconds);		
+	}
+	timer = setInterval(handleTimer,500);
+	handleTimer();
+}
+//处理闪购
+function handleFlashProudct(){
+	var oProductList = document.querySelector('.prodoct-list');
+	var aSpan = document.querySelectorAll('.biaoqian1,.biaoqian2');
+	aSpan[1].onclick = function(){
+		oProductList.style.marginLeft = '14px';
+	}
+	aSpan[0].onclick = function(){
+		oProductList.style.marginLeft = '-978px';
+	}
+}
+//处理家电部分
+function handleElecOriduct(){
+	var aTabItem = document.querySelectorAll('.tab-item');
+
 }

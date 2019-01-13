@@ -198,8 +198,11 @@ Carousel.prototype.bindEvent = function(){
 		for(var i = 0 ;i<this.oUlBtn.children.length;i++){
 			this.oUlBtn.children[i].index = i;
 			this.oUlBtn.children[i].onclick = function(){
-				_this.now = this.index;
-				_this.tab();
+				if (!(_this.now == this.index)) {
+					_this.now = this.index;
+					_this.tab();
+					console.log(_this.now)
+				}
 			}
 		}
 }
