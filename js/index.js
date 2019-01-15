@@ -6,6 +6,7 @@ handleCate();
 handleCountdown();
 handleFlashProudct();
 handleElecOriduct();
+handleSouSuo()
 
 //处理购物车
 function handleCart(){
@@ -198,5 +199,22 @@ function handleFlashProudct(){
 //处理家电部分
 function handleElecOriduct(){
 	var aTabItem = document.querySelectorAll('.tab-item');
+}
+//处理搜索框
+function handleSouSuo(){
+	var oSbox = document.querySelector('.head2-bottom');
+	var oIput = document.querySelector('.i1')
 
+	oIput.onclick = function(ev){
+		oSbox.style.display = 'block'
+		ev.stopPropagation();
+	}
+	document.onclick = function(ev){
+		oSbox.style.display = 'none'
+		ev.stopPropagation();
+	}
+	oSbox.onclick = function(ev){
+		oSbox.style.display = 'block'
+		ev.stopPropagation();
+	}
 }

@@ -2,7 +2,8 @@ handleCart();
 handleNav();
 handlebigphone();
 handleCate();
-handleCarousel()
+handleCarousel();
+handleSouSuo()
 //处理购物车
 function handleCart(){
 	//1.获取元素
@@ -189,4 +190,22 @@ function handleCarousel(){
 		height:640,
 		playDuration:1000
 	});	
+}
+//处理搜索框
+function handleSouSuo(){
+	var oSbox = document.querySelector('.head2-bottom');
+	var oIput = document.querySelector('.i1')
+
+	oIput.onclick = function(ev){
+		oSbox.style.display = 'block'
+		ev.stopPropagation();
+	}
+	document.onclick = function(ev){
+		oSbox.style.display = 'none'
+		ev.stopPropagation();
+	}
+	oSbox.onclick = function(ev){
+		oSbox.style.display = 'block'
+		ev.stopPropagation();
+	}
 }

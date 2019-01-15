@@ -253,11 +253,19 @@
 	color: white;
 }
 .head2-right input:hover{
+	border: 1px solid #ff6700;	
+}
+.head2-right input:hover ~ .box{
 	border: 1px solid #ff6700;
 }
 .head2-right span:hover{
 	background: #ff6700;
 }
+
+
+
+
+
 .head2-bottom{
 	width: 243px;
 	position: absolute;
@@ -266,6 +274,7 @@
 	display: none;
 	border: 1px solid #ff6700;
 	background: white;
+	z-index: 999;
 }
 .head2-bottom ul li{
 	height: 30px;
@@ -281,6 +290,8 @@
 	color: #b0b0b0;
 	margin-right: 14px;
 }
+
+
 .head2-right .i1:focus ~ .head2-bottom{
 	display: block;
 }
@@ -874,7 +885,7 @@
 }
 .main .phone .all{
 	position: absolute;
-	top: 21px;
+	top: 15px;
 	right: 30px;
 }
 .main .phone .yuan{
@@ -884,7 +895,7 @@
 	border-radius: 50%;
 	padding-left: 2px;
 	position: absolute;
-	top: 21px;
+	top: 15px;
 	right: 5px;
 }
 .main .phone a:hover .yuan{
@@ -894,438 +905,88 @@
 .main .phone a:hover i{
 	color: white;
 }
-.main .img{
-	width: 234px;
-	height: 614px;
-	position: relative;
-	top: 60px;
+.main .phone .head{
+	width: 100%;
+	height: 40px;
+	background: white;
 }
-.main .img img{
+.main .phone .img{
+	width: 238px;
+	height: 616px;
+	float: left;
+	margin-right: 10px;
+}
+.main .phone .img img{
 	width: 100%;
 	height: 100%;
-	position: relative;
-	top: -40px;
 }
-.main .phone .box2{
+.main .phone ul li{
+	float: left;
 	width: 235px;
-	height: 300px;
-	float: right;
-	position: absolute;
-	top: 60px;
-	right: 0px;
-}
-.main .phone .box3{
-	width: 235px;
-	height: 300px;
-	float: right;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-}
-.main .phone .box4{
-	width: 235px;
-	height: 300px;
-	float: right;
-	position: absolute;
-	top: 60px;
-	right: 250px;
-}
-.main .phone .box5{
-	width: 235px;
-	height: 300px;
-	float: right;
-	position: absolute;
-	bottom: 0px;
-	right: 250px;
-}
-.main .phone .box6{
-	width: 235px;
-	height: 300px;
-	position: absolute;
-	top:60px;
-	left: 250px;
-}
-.main .phone .box7{
-	width: 235px;
-	height: 300px;
-	position: absolute;
-	bottom:0px;
-	left: 250px;
-}
-.main .phone .box8{
-	width: 235px;
-	height: 300px;
-	position: absolute;
-	bottom:0px;
-	left: 496px;
-}
-.main .phone .box9{
-	width: 235px;
-	height: 300px;
-	position: absolute;
-	top:60px;
-	left: 496px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
+	height: 303px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
 	text-align: center;
-	background: #ff6700;
 }
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
+.main .phone ul li:nth-child(4){
+	margin-right: 0;
 }
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
+.main .phone ul li:nth-child(8){
+	margin-right: 0;
 }
-.main .phone .box2 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
+.main .phone ul li .b1{
+	width: 64px;
 	height: 20px;
-	margin: 0 auto;
+	background: green;
+	margin-left: 83px;
 	text-align: center;
-	background: #ff6700;
+	font-size: 8px;
+	color: white;
 }
-.main .phone .s1{
+.main .phone ul li img{
+	width: 207px;
+	height: 208px;
+	margin-left: 13px;
+}
+.main .phone ul li .s1{
 	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
+	font-weight: 400;
+	float: left;
+	margin-left: 40px;
 }
-.main .phone .s2{
+.main .phone ul li .s2{
 	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
+	color: gray;
+	float: left;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
-.main .phone .box3 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
+.main .phone ul li .s3{
 	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box4 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
+	float: left;
 	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
+	margin-left: 90px;
 }
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box5 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box6 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box7 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box8 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .b1{
-	width: 70px;
-	height: 20px;
-	margin: 0 auto;
-	text-align: center;
-	background: #ff6700;
-}
-.main .phone .s1{
-	font-size: 14px;
-	margin-left: 45px;
-	color: black;
-	position: relative;
-	top: 210px;
-	left: 50px;
-}
-.main .phone .s2{
-	font-size: 12px;
-	color: #bebebb;
-	position: relative;
-	top: 232px;
-	left: -8px;
-}
-.main .phone .box9 img{
-	width: 150px;
-	height: 200px;
-	position: absolute;
-	top: 30px;
-	left: 42px;
-}
-.main .phone .s3{
-	font-size: 12px;
-	color: #ff6700;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.main .phone .s4{
-	font-size: 12px;
-	color: #bebebb;
-	text-decoration: line-through;
-	position: relative;
-	top: 250px;
-	left: -70px;
-}
-.phone div{
+
+.phone li{
 	transition:box-shadow 0.2s;
 	transition: 0.2s;
 }
-.phone div:hover{
+.phone li:hover{
 	box-shadow:0px 5px 2px #D0CBCB;
 	transform: translateY(-10px);
 }
+.phone .img{
+	transition:box-shadow 0.2s;
+	transition: 0.2s;
+}
+.phone .img:hover{
+	box-shadow:0px 5px 2px #D0CBCB;
+	transform: translateY(-10px);
+}
+
 
 
 .main .flash{
@@ -1454,6 +1115,18 @@
 	font-size: 12px;
 	color: #ff6700;
 }
+}
+.content-center ul .l2 .commit{
+	width: 233px;
+	height: 100px;
+	background: red;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
 .content-bottom{
 	width: 100%;
 	height: 300px;

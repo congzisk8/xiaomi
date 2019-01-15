@@ -273,13 +273,13 @@ a{
 .head2-right input:hover{
 	border: 1px solid #ff6700;
 }
-.head2-right input:hover + .head2-right div{
-	/*border: 1px solid #ff6700;*/
-	/*border-color: #ff6700;*/
+.head2-right input:hover ~ .box{
+	border: 1px solid #ff6700;
 }
 .head2-right span:hover{
 	background: #ff6700;
 }
+
 
 .head2-right .b1{
 	width: 310px;

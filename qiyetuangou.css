@@ -104,6 +104,64 @@ a{
 .head1-right a:hover{
 	color: white;
 }
+#box11{
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background: #fff;
+	width: 300px;
+	height: 0px;
+	text-align: center;
+	z-index: 999;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+	overflow: hidden;
+}
+#s1{
+	margin-top: 50px;
+	font-size: 13px;
+	font-weight: 400;
+	display: none;
+}
+.loader{
+	position: relative;
+	width: 4px;
+	height: 20px;
+	background: #ff6700;
+	margin: 0 auto;
+	animation: loading 0.3s linear 0s infinite alternate;
+	margin-top: 50px;
+	display: block;
+}
+.loader:after,.loader:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 4px;
+	height: 20px;
+	background: #ff6700;
+}
+.loader:after{
+	margin-left: 10px;
+	transform: scale(1,0.5);
+	animation: loading 0.3s linear 0.3s infinite alternate;
+}
+.loader:before{
+	margin-left: -10px;
+	transform: scale(1,0.5);
+	animation: loading 0.3s linear 0.5s infinite alternate;			
+}
+@keyframes loading{
+	from{
+		opacity: 0.5;
+		transform: scale(1,0.5);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1,1);
+	}
+}
 
 
 
