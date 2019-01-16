@@ -6,7 +6,8 @@ handleCate();
 handleCountdown();
 handleFlashProudct();
 handleElecOriduct();
-handleSouSuo()
+handleSouSuo();
+handleElecProduct()
 
 //处理购物车
 function handleCart(){
@@ -162,7 +163,7 @@ function handleCate(){
 //处理倒计时
 function handleCountdown(){
 	var oTimenubm = document.querySelectorAll('.content3 .box1 .s3,.content3 .box1 .s10,.content3 .box1 .s5');
-	var endDate = new Date('2019-1-15 15:06:59');
+	var endDate = new Date('2019-1-17 15:06:59');
 	var timer = 0
 	function to2Str(num){
 		return num > 9 ? '' +num : '0'+num;
@@ -216,5 +217,74 @@ function handleSouSuo(){
 	oSbox.onclick = function(ev){
 		oSbox.style.display = 'block'
 		ev.stopPropagation();
+	}
+}
+//处理家电部分
+function handleElecProduct(){
+	//1.获取元素
+	var aTabItem = document.querySelectorAll('.tab-item');
+	var oElecProduct = document.querySelector('.elec-product');
+	console.log(oElecProduct)
+	//初始化加载
+	loadData(0);
+	//2.添加事件
+	for(var i = 0;i<aTabItem.length;i++){
+		aTabItem[i].index = i;
+		aTabItem[i].onmouseenter = function(){
+			//排他
+			for(var j = 0;j<aTabItem.length;j++){
+				aTabItem[j].className = 'tab-item';
+			}
+			this.className = 'tab-item tab-item-active';
+			//加载数据
+			loadData(this.index);
+		}
+	}
+	function loadData(index){
+		var data = aElecItemData[index];//data里的
+		var html = '';
+		//根据数据构建html
+		for(var i = 0;i<data.length-1;i++){
+			html += '<li class="product-item product-item-m">';
+			html += '	<a href="'+data[i].url+'">';
+			html += '		<img src="'+data[i].img+'" alt="" class="product-img">';
+			html += '	</a>';
+			html += '	<h3 class="product-name">'+data[i].name+'</h3>';
+			html += '	<p class="product-desc">'+data[i].desc+'</p>';
+			html += '	<p class="product-price">';
+			html += '		<strong>'+data[i].price+'</strong><span>&nbsp;元</span>';
+			html += '		<del>'+data[i].del+'元</del>';
+			html += '	</p>';
+			if(data[i].flag){
+				html += '	<span class="flag '+data[i].flag.name+'">'+data[i].flag.content+'</span>';
+			}
+			if(data[i].view){
+				html += '	<div class="view">';
+				html += '		<p class="recommend">'+data[i].view.recommend+'</p>';
+				html += '		<p class="author">';
+				html += '			来自于<span>'+data[i].view.author+'<span>的评价';
+				html += '		</p>';
+				html += '	</div>';
+			}
+			html += '</li>';			
+		}
+		var lastData = data[data.length-1];
+		html +=	'<li class="product-item product-item-s">';
+		html +=	'	<a href="'+lastData.top.url+'">';
+		html +=	'		<img src="'+lastData.top.img+'" alt="" class="product-img">';
+		html +=	'	</a>';
+		html +=	'	<h3 class="product-name">'+lastData.top.name+'</h3>';
+		html +=	'	<p class="product-price">';
+		html +=	'		<strong>'+lastData.top.price+'</strong><span>&nbsp;元</span>';
+		html +=	'	</p>										';
+		html +=	'</li>';
+		html +=	'<li class="product-item product-item-s">';
+		html +=	'	<a class="more" href="'+lastData.bottom.url+'">';
+		html +=	'		'+lastData.bottom.txt+'<span>'+lastData.bottom.tag+'</span>';
+		html +=	'		<i class="iconfont">'+lastData.bottom.icon+'</i>';
+		html +=	'	</a>	';
+		html +=	'</li>			';
+		oElecProduct.innerHTML = html;	
+
 	}
 }
