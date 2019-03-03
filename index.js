@@ -36,6 +36,7 @@ function handleCart(){
 		});
 	}	
 }
+
 //处理导航
 function handleNav(){
 	//1.获取导航列表
