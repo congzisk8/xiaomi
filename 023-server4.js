@@ -7,6 +7,7 @@ var http = require('http');
 var fs   = require('fs');
 var url = require('url');
 
+
 var server = http.createServer(function(req,res){
 	var urlStr = req.url;
 	console.log(req.method);
