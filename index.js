@@ -5,6 +5,8 @@ handleNav();
 //处理购物车
 function handleCart(){	
 	
+
+	
 	//1.获取元素
 	var oCart = document.querySelector('.head1-right');
 	var oCartLink = document.querySelector('.head1-right-box a');
