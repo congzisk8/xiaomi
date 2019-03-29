@@ -4,7 +4,6 @@ handleNav();
 
 //处理购物车
 function handleCart(){	
-	
 
 	
 	//1.获取元素
