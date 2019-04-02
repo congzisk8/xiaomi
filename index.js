@@ -17,7 +17,7 @@ function handleCart(){
 		oCartLink.style.color = '#ff6700';
 		//2.加载loading图标
 		oLoder.style.display = 'block'
-		//3.显示购物车内容,假设购物车完全显示，就获取购物车数据
+		//3.显示购物车内容,假设购物车
 		animate(oCartContent,{height:120},true,function(){
 			oLoder.style.display = 'none';
 			oEmptyCart.style.display = 'block';
