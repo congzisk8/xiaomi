@@ -12,7 +12,7 @@ function handleCart(){
 	var oLoder = document.querySelector('.loader');
 	var oEmptyCart = document.getElementById('s1');
 
-	oCart.onmouseenter = function(){
+	oCart.onmouseenterk'b = function(){
 		//1.改变购物车图标的背景色和字体颜色
 		oCartLink.style.background = '#fff';
 		oCartLink.style.color = '#ff6700';
